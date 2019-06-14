@@ -1,4 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+  <div class='col-lg-3'>
+    <br>
+    <img src='{{ product.image.url }}' style='width:100%;'>
+  </div>
+  <div class='col-lg-9'>
+    <br>
+    <h2 class='text-center'>{{ product.title}}</h2>
+    <p>{% lorem %}</p>
+    <p>{% lorem %}</p>
+    <p>{% lorem %}</p>
+    <hr>
+    <p>Price: <strong>{{ product.price }} uah</p>
+    <a href='#'><button class='btn btn-danger'> add to cart </button></a>
+  </div>
 {%endblock content%}
