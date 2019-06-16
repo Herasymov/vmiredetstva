@@ -13,7 +13,8 @@
           <h4 class="card-title">
             <a href="{{product.get_absolute_url}}">{{product.title}}</a>
           </h4>
-          <h5>{{product.price}} uah</h5>
+          <p>Price: <strong>{{ product.price }} uah</p>
+          <a href='#'><button class='btn btn-danger'> add to cart </button></a>
           <p class="card-text" style = " white-space: nowrap; overflow: hidden; padding: 5px; text-overflow: ellipsis; ">{{product.description}}</p>
         </div>
       </div>
